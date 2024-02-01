@@ -1,5 +1,5 @@
 
-from RestApi.IxOSRestInterface import IxRestSession
+from RestApi.IxOSCaller import IxRestSession
 from tabulate import tabulate
 
 """
@@ -15,7 +15,7 @@ deactivation
  """
 
 
-session = IxRestSession("10.36.237.139", "admin", "admin")
+session = IxRestSession("10.36.237.139", "admin", "xxx")
 
 def get_licenses(id=1, session=None):
     #host_id = session.get_license_server_host_id(id=id)
