@@ -34,26 +34,26 @@ def get_licenses(id=1, session=None):
     return tabulate(license_info_list, headers=headers, tablefmt='grid')
 
 
-print(" ========================================================= ")
+print(" \n\n========================================================= ")
 print(session.get_license_servers())
-print(" ========================================================= ")
+print(" \n\n========================================================= ")
 print(get_licenses(id=1, session=session))
-print(" ========================================================= ")
-#print(session.set_new_license_server(server_ip = "192.168.10.1"))
-print(" ========================================================= ")
+print(" \n\n========================================================= ")
+print(session.set_new_license_server(server_ip = "192.168.10.1"))
+print(" \n\n========================================================= ")
 print(session.do_license_check_operation(operation="get"))
-print(" ========================================================= ")
+print(" \n\n========================================================= ")
 print(session.do_license_check_operation(operation="enable"))
-print(" ========================================================= ")
+print(" \n\n========================================================= ")
 print(session.do_license_check_operation(operation="disable"))
-print(" ========================================================= ")
+print(" \n\n========================================================= ")
 print(session.check_internet_connectivity(id=1))
-print(" ========================================================= ")
+print(" \n\n========================================================= ")
 list_of_deactivation_code_quantity = [{'activationCode': "D3AA-E129-CBB2-34BB", "quantity": 1}]
 print(session.deactivate_licenses(id=1, list_of_activation_code_quantity=list_of_deactivation_code_quantity))
 
 print(get_licenses(id=1, session=session))
-print(" ========================================================= ")
+print(" \n\n========================================================= ")
 list_of_activation_code_quantity = []
 activationCodes = ["D3AA-E129-CBB2-34BB"]
 for activationCode in activationCodes:
@@ -64,6 +64,7 @@ for activationCode in activationCodes:
 print(list_of_activation_code_quantity)
 print(session.activate_licenses(id=1, list_of_activation_code_quantity=list_of_activation_code_quantity))
 print(get_licenses(id=1, session=session))
-print(" ========================================================= ")
-
-# print(session.unset_new_license_server(id=2))
+print(" \n\n========================================================= ")
+print(session.unset_new_license_server(id=3))
+print(" \n\n========================================================= ")
+print(session.get_license_servers())

@@ -1,0 +1,77 @@
+ashwjosh@HK4T3VJL9J licensingMaster % /usr/bin/python3 /Users/ashwjosh/licensingMaster/myapp.py
+/Users/ashwjosh/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:34: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+ 
+
+========================================================= 
+[{'id': 1, 'host': 'localhost'}]
+ 
+
+========================================================= 
+Polling for async operation ...
+Completed async operation
++--------------+---------------------+------------+--------------------------------------------------+-------------------+--------------+-------------+
+| partNumber   | activationCode      |   quantity | description                                      | maintenanceDate   | expiryDate   | isExpired   |
++==============+=====================+============+==================================================+===================+==============+=============+
+| 939-9503-105 | D3AA-E129-CBB2-34BB |          2 | IXIA IxNetwork VE Tier-3 1G Subscription License | 09-Jun-2024       | 09-Jun-2024  | False       |
++--------------+---------------------+------------+--------------------------------------------------+-------------------+--------------+-------------+
+ 
+
+========================================================= 
+{'href': 'https://10.36.237.139/platform/api/v2/licensing/servers/3'}
+ 
+
+========================================================= 
+License check on port connect: disabled
+ 
+
+========================================================= 
+Check license on port connect was set to: enable
+ 
+
+========================================================= 
+Check license on port connect was set to: disable
+ 
+
+========================================================= 
+Polling for async operation ...
+Completed async operation
+{'canConnectToIxiaBackend': True}
+ 
+
+========================================================= 
+Deactivating.
+Polling for async operation ...
+Completed async operation
+[{'activationCode': 'D3AA-E129-CBB2-34BB', 'quantity': 1}]
+https://10.36.237.139/platform/api/v2/licensing/servers/1
+Polling for async operation ...
+Completed async operation
++--------------+---------------------+------------+--------------------------------------------------+-------------------+--------------+-------------+
+| partNumber   | activationCode      |   quantity | description                                      | maintenanceDate   | expiryDate   | isExpired   |
++==============+=====================+============+==================================================+===================+==============+=============+
+| 939-9503-105 | D3AA-E129-CBB2-34BB |          1 | IXIA IxNetwork VE Tier-3 1G Subscription License | 09-Jun-2024       | 09-Jun-2024  | False       |
++--------------+---------------------+------------+--------------------------------------------------+-------------------+--------------+-------------+
+ 
+
+========================================================= 
+Activating.
+Polling for async operation ...
+Completed async operation
+[{'activationCode': 'D3AA-E129-CBB2-34BB', 'quantity': 1}]
+Polling for async operation ...
+Completed async operation
+https://10.36.237.139/platform/api/v2/licensing/servers/1
+Polling for async operation ...
+Completed async operation
++--------------+---------------------+------------+--------------------------------------------------+-------------------+--------------+-------------+
+| partNumber   | activationCode      |   quantity | description                                      | maintenanceDate   | expiryDate   | isExpired   |
++==============+=====================+============+==================================================+===================+==============+=============+
+| 939-9503-105 | D3AA-E129-CBB2-34BB |          2 | IXIA IxNetwork VE Tier-3 1G Subscription License | 09-Jun-2024       | 09-Jun-2024  | False       |
++--------------+---------------------+------------+--------------------------------------------------+-------------------+--------------+-------------+
+ 
+
+========================================================= 
+Deleting License Server.
+None
+[{'id': 1, 'host': 'localhost'}]
